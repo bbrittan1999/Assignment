@@ -4,6 +4,10 @@ bar */*{
     padding: 0;
  }
 
+ul li{
+    display: inline;
+}
+
  nav {
     margin: 50px;
  }
@@ -23,10 +27,9 @@ bar */*{
  }
  li:last-child {
      border-right: none;
-     text-align:center;
+
  }
  li a {
-     text-align: center;
      text-decoration: none;
      color: rgb(14, 210, 224);
      font: 25px/1 Helvetica, Verdana, sans-serif;
