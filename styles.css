@@ -15,6 +15,7 @@ bar */*{
  }
 
  li {
+    text-align:center;
     height: 25px;
     float: left;
     margin-right: 0px;
