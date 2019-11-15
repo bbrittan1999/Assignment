@@ -8,32 +8,47 @@
     <title>My Portfolio Site</title>
     <!--Stylesheet is linked  exactly as named in the below code
     to supply the webpage with a structure -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
+
         
 </head>
 <body>
+    <!-- The following lines of code are credit of Liz coulter-smith
+    taken from week 7 lecture code challenge to provide a live video wallpaper-->
+<div class="backgroundvid">
+    <!-- i implemented all my content and containers within the "bacgroundvid" div tage to ensure my content
+    was included within the video background, this was just the case of moving it between another div tag-->
+    <div class="container">
 
-<div class="container">
-    <h1> Hi, Im Brandon!</h1>
         <span> <img src="images/uniphoto.jpg" alt"profile-pic"></span>
+
 </div>
 
-
-
+<!--I used an additional container to allow my navigation to be centered-->
+<div class="containerNav">
     <nav>
             <ul>
                 <!-- Creation of unordered lists to create the tabs available
                 The tabs link with the stylesheet to create the basic navigation-->
                 <!-- The below code was taken from Liz Coulter-Smith 
                     - Starter Code: Class Challenege - Navigation -->
-                <li><a href="#">Home</a></li>
-                <li class="active">
-                    <a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
+            <br><br>  <!--I used the break funciton to create a seperation for my text to
+            avoid it looking too close together and clunky-->
+            <h1>Hi, My name's Brandon <hr> I am a web developer student at Northampton University</h1>
+            
     </nav>
+</div> 
+<!-- This is where the video is taken from and implemented, the 'assets' tag allows for the video to
+be taken from the assests folder and loaded quicker-->
+    <video class="video-bg" autoplay muted loop>
         
+        <source src="assets/piano.mp4" type:"video/mp4>"
+    </video></div>
+  
            
     
 </body>
