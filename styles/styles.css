@@ -13,8 +13,15 @@ https://nile.northampton.ac.uk/webapps/portal/execute/tabs/tabAction?tab_tab_gro
     text-align: center;
  }
 
- /*".containerNav" was taken from code challenge in lecture week 7 product of Liz Coulter-Smith*/
- .containerNav {
+
+.containerNav{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+ /*".containerIntro" was taken from code challenge in lecture week 7 product of Liz Coulter-Smith*/
+ .containerIntro{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,7 +35,9 @@ https://nile.northampton.ac.uk/webapps/portal/execute/tabs/tabAction?tab_tab_gro
  }
 
  li {
-    height: 25px;
+    height: 27px; 
+    /*Used a 7px frame to ensure the box doesnt present a standard navigation to relocate the bar to fit 
+    the screen size, having it as 27px means that it fits better and doesnt have resizing issues */
     float: left;
     margin-right: 0px;
     border-right: 5px solid rgb(0, 0, 0);
@@ -40,24 +49,33 @@ https://nile.northampton.ac.uk/webapps/portal/execute/tabs/tabAction?tab_tab_gro
  }
  li a {
      text-decoration: none;
-     color: rgb(6, 248, 46);
+     color: rgb(180, 233, 226);
      font: 25px/1 Helvetica, Verdana, sans-serif;
      text-transform: uppercase;
      transition: all 1s ease;     
  }
 
  li a:hover {
-     color: rgb(80, 3, 42)
+     color: rgb(80, 3, 42);
+ }
+/* I chose the 'Shadows into light two font from google fonts to present a more authentic handwritten style*/
+ h1 {
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 3em;
  }
 
+ h2 {
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 3em;
+ }
 
  /*This is the stylesheet created for the
  image on the landing page */
 
 
- h1 {
-     font-family: 'Times New Roman', cursive;
- }
+
+
+
 
  .item {
      text-align: 200px;
@@ -66,12 +84,27 @@ https://nile.northampton.ac.uk/webapps/portal/execute/tabs/tabAction?tab_tab_gro
      width: 240px;
  }
 
- img {
+
+
+
+ .profile {
      height: 300px;
      border-style: none;
      border-radius: 100%;
      filter: drop-shadow(0);
  }
+
+ .github {
+    height: 50px;
+    width: 50px;
+    border-style: none;
+    border-radius: 100%;
+    opacity: 0.5;
+}
+
+.github:hover{
+    opacity: 1;
+}
 
  .container:hover{
      filter: drop-shadow(20px 20px 30px rgb(135, 240, 135));
