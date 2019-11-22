@@ -126,7 +126,7 @@ set to have a low opacity and change to a higher value on hover*/
 .insta:hover{
     opacity: 1;
 }
-}
+
  .container:hover{
      filter: drop-shadow(20px 20px 30px rgb(135, 240, 135));
      /*The above line was taken from https://developer.mozilla.org/en-US/docs/Web/CSS/filter */
