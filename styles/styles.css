@@ -14,13 +14,6 @@ https://nile.northampton.ac.uk/webapps/portal/execute/tabs/tabAction?tab_tab_gro
  }
 
 
-.logo{
-
-}
-
-
-
-
 .containerNav{
     display: flex;
     justify-content: center;
@@ -82,8 +75,6 @@ https://nile.northampton.ac.uk/webapps/portal/execute/tabs/tabAction?tab_tab_gro
 
 
 
-
-
  .item {
      text-align: 200px;
      border-radius: 100%;
@@ -100,20 +91,42 @@ https://nile.northampton.ac.uk/webapps/portal/execute/tabs/tabAction?tab_tab_gro
      border-radius: 100%;
      filter: drop-shadow(0);
  }
-
+/* the images / icons are resized for 50 x 50 on sqoosh and set to 50px x 50px within the programme both
+set to have a low opacity and change to a higher value on hover*/
  .github {
     height: 50px;
     width: 50px;
     border-style: none;
     border-radius: 100%;
     opacity: 0.5;
-    clear: left;
 }
 
 .github:hover{
     opacity: 1;
 }
 
+.facebook{
+    height: 50px;
+    width: 50px;
+    border-style: none;
+    border-radius: 100%;
+    opacity: 0.5;}
+
+.facebook:hover{
+    opacity: 1;
+}
+
+.insta{
+    height: 50px;
+    width: 50px;
+    border-style: none;
+    border-radius: 100%;
+    opacity: 0.5;}
+
+.insta:hover{
+    opacity: 1;
+}
+}
  .container:hover{
      filter: drop-shadow(20px 20px 30px rgb(135, 240, 135));
      /*The above line was taken from https://developer.mozilla.org/en-US/docs/Web/CSS/filter */
@@ -147,7 +160,9 @@ https://nile.northampton.ac.uk/webapps/portal/execute/tabs/tabAction?tab_tab_gro
      margin-bottom: 0px;
      position: relative;
      overflow: hidden;
-     min-height: 100vh;
+     min-height: 109vh;
+     
+     /*all: initial;*/
  }
 
  .video-bg{
