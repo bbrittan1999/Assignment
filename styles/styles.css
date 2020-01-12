@@ -9,10 +9,96 @@ https://nile.northampton.ac.uk/webapps/portal/execute/tabs/tabAction?tab_tab_gro
  }
 
 
+/* Contacts page creation */
+
+.contactForm{
+    text-align:center;
+    color: #000000;
+}
+
+.Form{
+    height: 900px;
+    width: 60%;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+
+
+/* CV CREATION*/
+.CVGrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+
+    }
+    /* code for border of grid taken from 
+    https://medium.com/@robleto/how-to-set-internal-border-lines-on-a-css-grid-layout-f2f1eeaafb61*/
+    
+    /* Grid code was taken from revision notes made from grid activity
+    in lectures using the farm based game
+    
+    Code had to be duplicated for all divs as it was required for them to
+    all have the border */
+
+
+    .PSDiv { 
+    grid-area: 1 / 1 / 2 / 6; 
+    border-top: 1px solid #000000;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    }
+    .KSDiv { 
+    grid-area: 2 / 1 / 4 / 3; 
+    border-top: 1px solid #000000;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    }
+    .ExDiv { 
+    grid-area: 2 / 3 / 4 / 6; 
+    border-top: 1px solid #000000;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    }
+    .RDiv { 
+    grid-area: 4 / 1 / 6 / 3; 
+    border-top: 1px solid #000000;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    }
+    .EdDiv { 
+    grid-area: 4 / 3 / 6 / 6; 
+    border-top: 1px solid #000000;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    }
+
+
+
+
+
+
+
+
+
 /* This body class was created so that i could assign the second page a background colour without
 it having an impact on my index.html page*/
- body.portfolioBG{
-     background-color: #607D8B;
+ body.imageBG{
+    background-color:#f6ebc9;
+    background-image: url("/images/portfolio.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
  }
 
  nav {
@@ -84,6 +170,10 @@ it having an impact on my index.html page*/
     font-family: 'Shadows Into Light Two', cursive;
     font-size: 3em;
  }
+ h4 {
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 1.5em;
+ }
 
  /*This is the stylesheet created for the
  image on the landing page */
@@ -132,14 +222,14 @@ set to have a low opacity and change to a higher value on hover*/
     opacity: 1;
 }
 
-.insta{
+.email{
     height: 50px;
     width: 50px;
     border-style: none;
     border-radius: 100%;
     opacity: 0.5;}
 
-.insta:hover{
+.email:hover{
     opacity: 1;
 }
 
